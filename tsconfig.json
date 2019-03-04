@@ -1,0 +1,29 @@
+{
+  "extends": "@nuxt/typescript-edge",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "resolveJsonModule": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "paths": {
+      "@/*": ["app/*"],
+      "~/*": ["*"]
+    },
+    "types": [
+      "node",
+      "@nuxt/vue-app"
+    ],
+    "typeRoots" : [
+      "app/types"
+    ]
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.vue"
+  ],
+  "exclude": ["node_modules"]
+}

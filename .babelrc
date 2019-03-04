@@ -1,0 +1,18 @@
+{
+  "env": {
+    "test": {
+      "passPerPreset": true,
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": "current"
+            }
+          }
+        ],
+        "@nuxt/babel-preset-app-edge"
+      ]
+    }
+  }
+}
